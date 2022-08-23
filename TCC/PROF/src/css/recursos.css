@@ -1,0 +1,267 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+}
+
+.container > .img{
+    position: relative;
+    border-radius: 24px;
+    background: #E9EAF0;
+    box-shadow: -18px -18px 36px rgba(255, 255, 255, 0.7), 18px 18px 36px rgba(189, 200, 223, 0.7);
+    border-radius: 24px;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.img > img{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: -60%;
+
+}
+
+
+
+.recursos-func{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    top: 10%;
+    align-items: center;
+}
+
+#text{
+    color: #CC2222 !important;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+
+.col{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 2rem;
+
+}
+#row1{
+    grid-row: 1;
+}
+#row2{
+    grid-row: 2;
+}
+
+.col > .row{
+    display: flex;
+    column-gap: 1rem;
+    margin-top: 1rem;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+
+.col > .row > .square{
+    width: 50px;
+    height: 50px;
+    display: grid;
+    align-items: center;
+    background: #E9EAF0;
+    opacity: 0.5;
+    border: 4px solid rgb(84, 179, 7);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -18px -18px 36px rgba(255, 255, 255, 0.7);
+    border-radius: 14px;
+}
+
+
+
+
+
+/* FICHA TECNICA */
+
+.container-ficha{
+    width: 100%;
+    height: calc(100% + 20%)
+}
+
+.big-text{
+    font-size: 4rem !important;
+    margin-bottom: 2rem;
+}
+
+.container-ficha > .content{
+    position: relative;
+    width: 1000px;
+    height: 100%;
+    padding-bottom: 4rem;
+    margin: 4rem auto;
+    background: #E9EAF0;
+    box-shadow: -18px -18px 36px rgba(255, 255, 255, 0.7), 18px 18px 36px rgba(189, 200, 223, 0.7);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.big-card{
+    position: relative;
+    margin: 2rem auto;
+    width: 50%;
+    height: 200px;
+    background: #E9EAF0;
+    box-shadow: -18px -18px 36px rgba(255, 255, 255, 0.7), 18px 18px 36px rgba(189, 200, 223, 0.7);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.big-card > .img-card{
+    width: 150px;
+    height: 150px;
+    background: #E9EAF0;
+    box-shadow: -18px -18px 36px rgba(255, 255, 255, 0.7), 18px 18px 36px rgba(189, 200, 223, 0.7);
+    border-radius: 24px;
+}
+
+.img-card > img{
+    position: relative;
+    top: -25%;
+    left: -20%;
+    width: 150%;
+    height: 150%;
+}
+
+#text-card{
+    font-size: 1.5rem !important;
+}
+
+
+/* DROPDOWN */
+
+.container-faq{
+   position: relative;
+   width: 70%;
+   min-width: 300px;
+}
+
+.wrapper {
+     position: relative;
+     margin-bottom: 20px;
+     padding: 15px 40px;
+     border-radius: 24px;
+     background: #E9EAF0;
+     box-shadow: -18px -18px 36px rgba(255, 255, 255, 0.7), 18px 18px 36px rgba(189, 200, 223, 0.7);
+}
+
+.toggle{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    column-gap: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 0;
+    margin: 0!important;
+}
+
+.drop{
+    position: relative;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 30px;
+    height: 0;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.drop > .container-drop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    flex-wrap: wrap;
+    border-left: 2px solid #CC2222;
+    padding-left: 40px;
+    padding-right: 40px;
+    row-gap: 2rem;
+}
+
+
+
+.container-drop > .box{
+    list-style: circle;
+    max-width: 250px;
+}
+
+.box > .small-box{
+    text-align: left;
+
+    margin-left: .5rem;
+}
+
+
+/* https://www.youtube.com/watch?v=ru0ZiugRqDA */
+
+@media (max-width: 1030px){
+
+    .container{
+        width: 100%;
+
+        height: 100%;
+    }
+ 
+    .container-ficha{
+        width: 100%;
+        height: 100%;
+    }
+
+    .container-ficha > .content{
+        max-width: 1000px;
+        width: 90%;
+        height: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .big-card{
+      flex-direction: column;
+    }
+
+    .img-card{
+        position: relative;
+        top: -20%;
+    }
+    #text-card{
+        position: relative;
+        top:-5%;
+        font-size: 1rem !important;
+    }
+    .recursos-func{
+       margin-top: 3rem;
+    }
+   
+}
