@@ -7,11 +7,6 @@
   box-sizing: border-box;
 }
 
-body{
-  background: var(--background-white);
-  width: 100%;
-  height: 100%;
-}
 
 
 @font-face {
@@ -27,6 +22,11 @@ body{
   rgba(230, 231, 237, 0.2) 12.99%, 
   rgba(247, 248, 250, 0.2) 82.71%),
   #E9EAF0;
+  --color: #E9EAF0;
+  --box-shadow-white:-18px -18px 36px rgba(255, 255, 255, 0.7),
+  18px 18px 36px rgba(189, 200, 223, 0.7);
+  --box-shadow-white-2: -18px -18px 36px rgba(255, 255, 255, 0.25),
+  18px 18px 36px rgba(189, 200, 223, 0.25);
   --base-color-primary: #757E95;
   --base-color-second: #cc2222;
  
@@ -43,6 +43,23 @@ body{
   /* height */
   --margin-top: 1.83rem;
 }
+
+.dark-mode:root{
+  --background-white: #24272C;
+  --color: #24272C;
+  --box-shadow-white:-10px -10px 20px rgba(255, 255, 255, 0.1), 10px 10px 20px rgba(0, 0, 0, 0.25);
+  --box-shadow-white-2: -4px -4px 8px rgba(255, 255, 255, 0.1), 4px 4px 8px rgba(0, 0, 0, 0.25);
+  --base-color-primary: white;
+  --base-color-second: #cc2222;
+}
+
+
+body{
+  background: var(--background-white);
+  width: 100%;
+  height: 100%;
+}
+
 .big-title{
   font: var(--font-big-title);
   margin: var(--margin-top) 0;
