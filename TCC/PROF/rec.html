@@ -72,10 +72,10 @@
  </header>
 
 <main class="main">
-  <div class="container">
+  <section class="container">
    <div class="wrapper">
-
-    <div class="card">
+   <!-- camera -->
+    <div class="card cam">
       <div class="img">
         <img src="src/img/cam.png" alt="" srcset="">
       </div>
@@ -90,7 +90,32 @@
       </div>
       </div>
     </div>
+    <div class="modal-cam" id="modal-cam">
+      <div class="modal-container">
+        <form action="" method="post">
+        <button class="fechar">X</button>
+        <h2>Agende o Recurso</h2>
+        <p>Recurso: camera </p>
+        <label for="nome">Nome Professor</label>
+        <input type="text" name="nome" id="nome">
+        <div class="content-check">
+          <label for="item"><input type="checkbox" name="item" id="item"> 1</label>
 
+          <label for="item"><input type="checkbox" name="item" id="item"> 2</label>
+
+          <label for="item"><input type="checkbox" name="item" id="item"> 3</label>
+
+          <label for="item"><input type="checkbox" name="item" id="item"> 4</label>
+         
+          <label for="item"><input type="checkbox" name="item" id="item"> 5</label>
+        </div>
+        <label for="mensagem">Mensagem</label>
+        <input type="text" name="mensagem" id="mensagem"><br>
+        <input type="submit" value="Enviar" id="enviar">
+      </form>
+      </div>
+    </div>
+ <!-- fim -->
     <div class="card">
       <div class="img">
         <img src="src/img/cam.png" alt="" srcset="">
@@ -155,10 +180,11 @@
       </div>
     </div>
    </div>
-  </div>
+  </section>
 </main>
 
 <script src="src/js/dark-mode.js"></script>
 <script src="src/js/submenu.js"></script>
+<script src="src/js/modal-rec.js"></script>
 </body>
 </html>
