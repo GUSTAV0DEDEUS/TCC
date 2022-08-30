@@ -15,7 +15,9 @@
 }
 
 #screen{
-    height: 100%;}
+    height: 100%;
+    position: relative;
+}
 
 .container{
     margin-top: 2rem;
@@ -62,6 +64,76 @@
   align-items: center;
 }
 
+.row > li > img{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+/* modal */
+.submit{
+    position: fixed;
+    z-index: 99999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: var(--background-white);
+
+}
+
+.submit > form > .fechar{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    background-color: transparent;
+    border: 0;
+    font-size: 2rem;
+}
+
+.content-modal{
+    display: flex;
+    flex-direction: column;
+}
+
+.submit h1{
+    font: var(--font-big-title);
+    color: var( --base-color-second);
+    top: 15%;
+    position: absolute;
+
+}
+
+form > h2{
+    text-align: center;
+    font: var(--font-medium-text);
+    color: var(--base-color-primary);
+    font-size: 2rem;
+
+}
+.content-modal > label, input, select, option{
+    font: var(--font-medium-text);
+}
+
+.content-modal > input{
+    margin-bottom: 1rem;
+}
+
+.content-modal > select{
+    margin-bottom: 1rem;
+}
+
+.mostrar{
+    display: flex;
+}
+
+
+/* fim modal */
+
 /* Oberservação  */
 
 .container > .col{
@@ -100,6 +172,7 @@
 
 .text{
     position: relative;
+ 
     right: 4rem;
     max-width: 500px;
     text-align: center;

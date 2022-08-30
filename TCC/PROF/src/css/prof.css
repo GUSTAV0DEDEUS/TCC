@@ -23,6 +23,7 @@ input[type="radio"] {
 }
 
 .card-big {
+  cursor: pointer;
   width: calc(100% - 2rem);
   height: 250px;
   background: var(--color);
