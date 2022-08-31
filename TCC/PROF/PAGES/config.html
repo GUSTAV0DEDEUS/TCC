@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configurações | SRManagement</title>
+  <link rel="stylesheet" href="../src/css/config.css">
+  <link rel="stylesheet" href="../src/css/menu.css">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <header>
+    <div class="header-cont">
+      <div class="profile">
+      <img class="perfil" src="../src/img/rosto.jpeg" onclick="toggleMenu()">
+       <div class="sub-menu-wrap" id="subMenu">
+         <div class="sub-menu">
+            <div class="user-info">
+              <img src="../src/img/rosto.jpeg" alt="" srcset="">
+              <h2 class="sub-heading"> Daniel Vieira </h2> 
+            </div>
+            <hr>
+
+            <a href="" class="sub-menu-link">
+              <img src="" alt="">
+              <p>Perfil</p>
+              <span> > </span>
+            </a>
+
+            <a href="" class="sub-menu-link">
+              <img src="" alt="">
+              <p>Configurações</p>
+              <span> > </span>
+            </a>
+
+            <a href="" class="sub-menu-link">
+              <img src="" alt="">
+              <p>Ajuda</p>
+              <span> > </span>
+            </a>
+            
+            <a href="" class="sub-menu-link">
+              <img src="" alt="">
+              <p>Sair</p>
+              <span> > </span>
+            </a>
+          
+          </div>
+        </div> 
+        <div class="prof-info">
+          <p class="person-name"> Daniel Vieira </p>
+          <p class="description status"> Admin </p>
+        </div>
+      </div>
+      <div class="menu">
+        <ul>
+          <a href="../prof.html"><li class="btn-head"><i class="fa-solid fa-house"></i></li></a>
+          <a href="../rec.html"><li class="btn-head"><i class="fa-solid fa-boxes-stacked"></i></li></a>
+        </ul>
+      </div>
+      <div class="btn-mode">
+        <input type="checkbox" id="darkmode-toggle">
+        <label for="darkmode-toggle">
+          <img src="../src/img/sun.svg" alt="" class="sun">
+          <img src="../src/img/moon.svg" alt="" class="moon">
+        </label>
+      </div>
+ </header>
+
+  <main class="main">
+    <section class="container">
+      <div class="wrapper">
+        <div class="fullcol">
+            <div class="img-fullcol">
+                <img src="../src/img/rosto.jpeg" alt="" srcset="">
+            </div>
+            <div class="content-fullcol">
+              <h1>Daniel Vieira</h1>
+              <p>Admin</p>
+            </div>
+        </div>
+        <div class="settings">
+             <h2>Configurações</h2>
+              <div class="settings-container">
+                <a href="">Mudar de senha</a>
+                <a href="">Mudar de email</a>
+                <a href="">Veja seus dados</a>
+              </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+<script src="../src/js/dark-mode.js"></script>
+<script src="../src/js/submenu.js"></script>
+</body>
+</html>
