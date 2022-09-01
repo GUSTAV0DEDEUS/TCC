@@ -256,7 +256,7 @@ input[type="radio"] {
   width: 40%;
   min-width: 400px;
   position: relative;
-  height: 200px;
+  height: 240px;
 }
 
 
@@ -267,12 +267,33 @@ input[type="radio"] {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
   flex-wrap: wrap;
   column-gap: 2.5rem;
   background: var(--color);
   box-shadow: var(--box-shadow-white);
   border-radius: 24px;
+  overflow-y: auto;
+}
+
+.modal-container>.card-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.modal-container>.card-list::-webkit-scrollbar-track {
+  background: none; 
+ }
+/* Handle */
+.modal-container>.card-list::-webkit-scrollbar-thumb {
+  background: crimson; 
+   border-radius: 20px;
+
+}
+
+/* Handle on hover */
+.modal-container>.card-list::-webkit-scrollbar-thumb:hover {
+  background: crimson; 
 }
 
 .card-list>.item {
@@ -386,4 +407,41 @@ input[type="radio"] {
   .item>h3 {
     font-size: .8rem;
   }
+}
+
+/* Progress Bar */
+.circular-cont {
+  padding-bottom: 2rem;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  display: grid;
+  place-items: center;
+}
+
+.circular-progress {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background-color: crimson;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.circular-progress:before {
+  content: "";
+  position: absolute;
+  height: 84%;
+  width: 84%;
+  background: var(--background-white);
+  border-radius: 50%;
+}
+
+.value-container {
+  position: relative;
+  font-family: "Poppins";
+  font-size: 35px;
+  font-weight: 800;
+  color: black;
 }
